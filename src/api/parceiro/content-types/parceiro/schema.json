@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "parceiros",
+  "info": {
+    "singularName": "parceiro",
+    "pluralName": "parceiros",
+    "displayName": "Parceiro",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "targetField": "innerTitle"
+    },
+    "cardImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "innerTitle": {
+      "type": "string"
+    },
+    "innerContent": {
+      "type": "richtext"
+    },
+    "innerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

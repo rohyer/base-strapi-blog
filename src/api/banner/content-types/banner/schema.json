@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "banners",
+  "info": {
+    "singularName": "banner",
+    "pluralName": "banners",
+    "displayName": "Banner",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "targetField": "innerTitle"
+    },
+    "homeTitle": {
+      "type": "string",
+      "maxLength": 75
+    },
+    "homeContent": {
+      "type": "richtext",
+      "minLength": 200
+    },
+    "homeImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "homeButtonText": {
+      "type": "string"
+    },
+    "homeButtonLink": {
+      "type": "string"
+    },
+    "homeTab": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "innerTitle": {
+      "type": "string"
+    },
+    "innerContent": {
+      "type": "richtext"
+    },
+    "innerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

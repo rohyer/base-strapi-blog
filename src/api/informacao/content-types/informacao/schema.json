@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "informacaos",
+  "info": {
+    "singularName": "informacao",
+    "pluralName": "informacaos",
+    "displayName": "Informação"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "siteTitle": {
+      "type": "string",
+      "required": true
+    },
+    "addressText": {
+      "type": "string"
+    },
+    "addressLink": {
+      "type": "string"
+    },
+    "facebookLink": {
+      "type": "string"
+    },
+    "instagramLink": {
+      "type": "string"
+    },
+    "linkedinLink": {
+      "type": "string"
+    },
+    "youtubeLink": {
+      "type": "string"
+    },
+    "whatsappLink": {
+      "type": "string"
+    },
+    "telephone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    }
+  }
+}
