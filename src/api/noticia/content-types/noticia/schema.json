@@ -4,7 +4,8 @@
   "info": {
     "singularName": "noticia",
     "pluralName": "noticias",
-    "displayName": "Notícia"
+    "displayName": "Notícia",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,6 +15,29 @@
     "slug": {
       "type": "uid",
       "required": true
+    },
+    "cardTitle": {
+      "type": "string"
+    },
+    "cardImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "innerTitle": {
+      "type": "string"
+    },
+    "innerContent": {
+      "type": "richtext"
+    },
+    "innerImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
