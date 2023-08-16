@@ -4,7 +4,8 @@
   "info": {
     "singularName": "banner",
     "pluralName": "banners",
-    "displayName": "Banner"
+    "displayName": "Banner",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,7 +14,8 @@
   "attributes": {
     "slug": {
       "type": "uid",
-      "required": true
+      "required": true,
+      "targetField": "innerTitle"
     },
     "homeTitle": {
       "type": "string",
@@ -24,11 +26,12 @@
       "minLength": 200
     },
     "homeImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "homeButtonText": {
       "type": "string"
@@ -48,11 +51,12 @@
       "type": "richtext"
     },
     "innerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

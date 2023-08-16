@@ -14,17 +14,19 @@
   "attributes": {
     "slug": {
       "type": "uid",
-      "required": true
+      "required": true,
+      "targetField": "innerTitle"
     },
     "cardTitle": {
       "type": "string"
     },
     "cardImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "innerTitle": {
       "type": "string"
@@ -33,11 +35,12 @@
       "type": "richtext"
     },
     "innerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
