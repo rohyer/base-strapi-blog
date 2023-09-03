@@ -23,7 +23,7 @@
     },
     "homeContent": {
       "type": "richtext",
-      "minLength": 200
+      "maxLength": 200
     },
     "homeImage": {
       "type": "media",
