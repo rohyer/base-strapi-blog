@@ -4,7 +4,8 @@
   "info": {
     "singularName": "informacao",
     "pluralName": "informacaos",
-    "displayName": "Informação"
+    "displayName": "Informação",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -41,6 +42,14 @@
     },
     "email": {
       "type": "email"
+    },
+    "bannerImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
     }
   }
 }
