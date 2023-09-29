@@ -41,6 +41,12 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "categoria": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::categoria.categoria",
+      "inversedBy": "noticias"
     }
   }
 }
